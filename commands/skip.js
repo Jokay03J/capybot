@@ -10,7 +10,7 @@ module.exports = {
     try {
       await interaction.deferReply();
     await interaction.client.distube.skip(interaction.member.voice.channel);
-    await interaction.editReply("J'ai bien jouer la musique suivante");
+    await interaction.editReply("J'ai bien joué la musique suivante");
     } catch (error) {
       console.log(error);
       await interaction.reply(":x: Veuillez être dans le salon vocal");

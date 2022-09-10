@@ -33,7 +33,7 @@ module.exports = {
       )
     } catch (error) {
       return await interaction.reply(
-        "Type de fichier non valide"
+        "Type de fichier non valide <:Shrigga:1017840590320324740> "
       );
     }
   },

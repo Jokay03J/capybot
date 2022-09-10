@@ -29,7 +29,7 @@ module.exports = {
           interaction,
         }
       );
-      await interaction.editReply("musique ajouter à la file d'attente");
+      await interaction.editReply("musique ajoutée à la file d'attente");
     } catch (error) {
       console.log(error);
       return await interaction.reply(
