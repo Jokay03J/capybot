@@ -7,7 +7,6 @@ require("dotenv").config(".env");
 
 const { SpotifyPlugin } = require("@distube/spotify");
 const { SoundCloudPlugin } = require("@distube/soundcloud");
-const { YtDlpPlugin } = require("@distube/yt-dlp")
 
 const client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildVoiceStates],
@@ -22,7 +21,7 @@ const client = new Client({
 client.distube = new DisTube(client, {
   searchSongs: 5,
   emitNewSongOnly: false,
-  plugins: [new SpotifyPlugin(), new SoundCloudPlugin(), new YtDlpPlugin()],
+  plugins: [new SpotifyPlugin(), new SoundCloudPlugin()],
 });
 client.commands = new Collection();
 const commands = [];
