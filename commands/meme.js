@@ -1,7 +1,5 @@
 const { SlashCommandBuilder } = require("discord.js");
 const memeList = require("../utils/memeList");
-const superagent = require("superagent");
-const axios = require("axios").default;
 
 module.exports = {
   data: new SlashCommandBuilder()
