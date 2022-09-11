@@ -83,9 +83,8 @@ for (const file of commandFiles) {
 const rest = new REST({ version: "10" }).setToken(process.env.TOKEN);
 rest
   .put(
-    Routes.applicationGuildCommands(
+    Routes.applicationCommands(
       process.env.CLIENT_ID,
-      process.env.GUILD_ID
     ),
     { body: commands }
   )
