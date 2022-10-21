@@ -1,1 +1,1 @@
-# edenbot
+# capybot
